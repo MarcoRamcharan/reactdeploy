@@ -1,16 +1,16 @@
-import {HashRouter,Route, Routes} from 'react-router-dom'
+import {BrowserRouter,Route, Routes} from 'react-router-dom'
 import AboutPage from './AboutPage'
 import HomePage from './HomePage'
 
 function App() {
 
   return (
-    <HashRouter basename="/">
+    <BrowserRouter basename='/reactdeploy'>
     <Routes>
-      <Route exact path='/' element={<HomePage/>}></Route>
+      <Route path='/' element={<HomePage/>}></Route>
       <Route path='/about' element={<AboutPage/>}></Route>
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
