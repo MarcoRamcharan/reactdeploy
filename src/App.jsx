@@ -5,7 +5,7 @@ import HomePage from './HomePage'
 function App() {
 
   return (
-    <HashRouter>
+    <HashRouter basename="/">
     <Routes>
       <Route exact path='/' element={<HomePage/>}></Route>
       <Route path='/about' element={<AboutPage/>}></Route>
